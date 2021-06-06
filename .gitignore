@@ -1,0 +1,7 @@
+.*
+*~
+*.bak
+Debug
+Release
+!.gitignore
+!.mono

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/footstep_grass_001.ogg-09a62871e4c3ea611d6cd1e845dac4bf.oggstr"
+
+[deps]
+
+source_file="res://Audio/footstep_grass_001.ogg"
+dest_files=[ "res://.import/footstep_grass_001.ogg-09a62871e4c3ea611d6cd1e845dac4bf.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
