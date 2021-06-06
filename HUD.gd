@@ -1,7 +1,10 @@
 extends Control
 
+signal restart()
+
 onready var title := $Title
 onready var game_over := $GameOver
+onready var restart := $Restart
 onready var game_over_audio := $GameOverAudio
 onready var score := $Score
 onready var shadow := $Shadow
@@ -22,9 +25,14 @@ func _on_timeout():
 func _on_dead():
 	timer.stop()
 	game_over.show()
+	restart.show()
 	game_over_audio.play()
 
 
 func _on_start():
 	title.hide()
 	timer.start()
+
+
+func _on_Restart_pressed():
+	emit_signal("restart")

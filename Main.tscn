@@ -25,3 +25,4 @@ margin_bottom = 1300.0
 [connection signal="dead" from="Player" to="HUD" method="_on_dead"]
 [connection signal="start" from="Player" to="Platform" method="_on_start"]
 [connection signal="start" from="Player" to="HUD" method="_on_start"]
+[connection signal="restart" from="HUD" to="." method="_on_restart"]

@@ -90,8 +90,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Restart" type="Button" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -82.1951
+margin_top = -333.788
+margin_right = 111.805
+margin_bottom = -262.788
+custom_fonts/font = SubResource( 1 )
+text = "Restart"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Timer" type="Timer" parent="."]
 
 [node name="GameOverAudio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
+[connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timeout"]
