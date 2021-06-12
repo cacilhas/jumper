@@ -21,6 +21,7 @@ position = Vector2( 296, 1304 )
 [node name="HUD" parent="." instance=ExtResource( 5 )]
 margin_right = 600.0
 margin_bottom = 1300.0
+
 [connection signal="dead" from="Player" to="Platform" method="_on_finish"]
 [connection signal="dead" from="Player" to="HUD" method="_on_dead"]
 [connection signal="start" from="Player" to="Platform" method="_on_start"]
