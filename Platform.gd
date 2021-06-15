@@ -1,16 +1,16 @@
 extends Node2D
 
-export(PackedScene) var GroundGrass
-export(PackedScene) var GroundGrassSmall
+export var GroundGrass: PackedScene
+export var GroundGrassSmall: PackedScene
+export(int) var speed: float
+export var accel: float
+export(int) var platforms_per_screen: float
 
 var screen_size: Vector2
 var started := false
 var counter := 0.0
 var y_slice: float
 var next_platform: float
-export(int) var speed: float
-export(float) var accel: float
-export(int) var platforms_per_screen: float
 var factory: Dictionary
 var sides: Array
 var last_side := 0

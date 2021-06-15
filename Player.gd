@@ -8,15 +8,15 @@ const gravity := 3000.0
 const speed := 640
 
 var jump_force := 1400.0
+var jump := false
+var grounded := true
+var started := false
 
 onready var sprite := $Sprite
 onready var jump_audio := $JumpAudio
 onready var screen_size := get_viewport_rect().size
 onready var vforce := gravity
 onready var target := position.x
-var jump := false
-var grounded := true
-var started := false
 
 
 func _input(event: InputEvent) -> void:

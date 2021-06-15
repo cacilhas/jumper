@@ -2,6 +2,8 @@ extends Control
 
 signal restart()
 
+var score_value := 0
+
 onready var title := $Title
 onready var game_over := $GameOver
 onready var restart := $Restart
@@ -9,7 +11,6 @@ onready var game_over_audio := $GameOverAudio
 onready var score := $Score
 onready var shadow := $Shadow
 onready var timer := $Timer
-var score_value := 0
 
 
 func _process(delta: float) -> void:
